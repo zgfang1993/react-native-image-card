@@ -5,7 +5,7 @@ import {
   View,
   FlatList
 } from 'react-native';
-import ImageView from './../image/ImageView'
+import ImageView from './../image/ImageView';
 
 export default class NineMode extends Component {
 
@@ -66,6 +66,7 @@ export default class NineMode extends Component {
 
   _renderItem(imgStyle,{item,index}){
     const {rebounceDuration, easingFunc, maskOpacity, enableScaling, showDuration, closeDuration, disabled} = this.props;
+
     return (
         <ImageView
     source={{uri: item}}

@@ -1,6 +1,35 @@
 # react-native-image-card
 
-> 配置
+## 效果图
+
+![cardpic](https://user-images.githubusercontent.com/14739234/32363899-a1920038-c03f-11e7-91e0-ce47a6b1fdae.gif)
+
+## 使用
+
+install from npm
+
+```
+npm install --save react-native-image-card
+```
+
+```
+import ZoomImage from 'react-native-zoom-image';
+import {Easing} from 'react-native';
+<CardPic
+  style={{height:200}} //容器样式
+  source={pic4}
+  mode="multi"
+  maskOpacity={1}
+  easingFunc={Easing.ease}
+  rebounceDuration={500}
+  showDuration={100}
+  closeDuration={150}
+  enableScaling={false}
+  disabled={false}
+/>
+```
+
+## 配置
 
 style：整个图片卡的样式，九宫格模式必须设置图片容器宽度
 

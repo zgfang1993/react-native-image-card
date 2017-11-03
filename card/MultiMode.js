@@ -2,15 +2,14 @@ import React, {Component} from 'react';
 
 import {
   StyleSheet,
-  Dimensions,
   View
 } from 'react-native';
-import ImageView from './../image/ImageView'
+import ImageView from './../image/ImageView';
 
 export default class MultiMode extends Component{
   constructor(props){
-    super(props)
-    this.renderImg = this.renderImg.bind(this)
+    super(props);
+    this.renderImg = this.renderImg.bind(this);
   }
 
   render(){
