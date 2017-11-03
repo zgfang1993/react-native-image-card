@@ -1,6 +1,11 @@
 # react-native-image-card
 
-> 配置
+## 效果图
+
+![cardpic](https://user-images.githubusercontent.com/14739234/32363899-a1920038-c03f-11e7-91e0-ce47a6b1fdae.gif)
+
+
+## 配置
 
 style：整个图片卡的样式，九宫格模式必须设置图片容器宽度
 
