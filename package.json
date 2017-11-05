@@ -1,6 +1,6 @@
 {
   "name": "react-native-image-card",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Card Image component for React Native. Also supports multiple image layout and nine grid layout.",
   "main": "index.js",
   "scripts": {
