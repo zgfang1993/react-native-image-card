@@ -12,7 +12,7 @@
 
 ### 效果图
 
-![cardpic](https://user-images.githubusercontent.com/14739234/32363899-a1920038-c03f-11e7-91e0-ce47a6b1fdae.gif)
+![cardpic](https://user-images.githubusercontent.com/14739234/32413941-5a4c464a-c1e1-11e7-9717-2495dc2496da.gif)
 
 ### 使用
 

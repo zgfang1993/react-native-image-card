@@ -24,7 +24,7 @@ export default class NineMode extends Component {
     } = this.props;
 
     const imgWidth = (style.width - space*2)/3;
-    const imgStyle = {width: imgWidth, height: imgWidth, marginRight:space};
+    const imgStyle = {width: imgWidth, height: imgWidth, marginRight: space, marginBottom: space};
 
     return (
         <View style={[style]}>
