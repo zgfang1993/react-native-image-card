@@ -53,7 +53,7 @@ export default class NineMode extends Component {
       renderItem={this._renderItem.bind(this,imgStyle)}
       keyExtractor={this._keyExtractor}
       numColumns = {3}
-      columnWrapperStyle={{marginBottom: space}}
+      columnWrapperStyle={{}}
       style={{}}
       />
     }
@@ -66,12 +66,17 @@ export default class NineMode extends Component {
 
   _renderItem(imgStyle,{item,index}){
     const {rebounceDuration, easingFunc, maskOpacity, enableScaling, showDuration, closeDuration, disabled} = this.props;
+    let style = imgStyle;
+
+    if(index > 5){
+      style = Object.assign({},style,{marginBottom: 0})
+    }
 
     return (
         <ImageView
     source={{uri: item}}
-    imgStyle={imgStyle}
-    style={imgStyle}
+    imgStyle={style}
+    style={style}
     rebounceDuration={rebounceDuration}
     showDuration={showDuration}
     closeDuration={closeDuration}

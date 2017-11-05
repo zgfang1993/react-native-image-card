@@ -67,7 +67,7 @@ export default class CardPicDemo extends Component<{}> {
     }
   }
   render() {
-    const imageConwin = winWidth - 15*2 - 15*2;
+    const imageConwi = winWidth - 15*2 - 10*2; // 计算图片容器宽度（第一张图到第三张图的距离，包括两个间隙宽度）
 
     return (
         <ScrollView style={styles.container}>
@@ -155,7 +155,7 @@ export default class CardPicDemo extends Component<{}> {
     <Text>我是一条朋友圈</Text>
     </View>
     <CardPic
-    style={{width:imageConwin}}
+    style={{width:imageConwid}}
     source={pic8}
     mode="nineGrid"
     space={10}
