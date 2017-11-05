@@ -1,10 +1,19 @@
 # react-native-image-card
 
-## 效果图
+[![npm](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://www.npmjs.com/package/react-native-image-card)
+[![license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/zgfang1993/react-native-image-card/blob/master/LICENSE)
+
+### 功能
+- [X] 两种图片展示方式（多图无缝拼接模式，九宫格模式）
+- [X] 单张图点击放大预览，支持背景色透明度配置，图片点开关闭时长配置，上下滑动或单击关闭预览
+- [ ] 预览图可双击放大，双指缩放
+- [ ] 预览图可左滑右
+
+### 效果图
 
 ![cardpic](https://user-images.githubusercontent.com/14739234/32363899-a1920038-c03f-11e7-91e0-ce47a6b1fdae.gif)
 
-## 使用
+### 使用
 
 install from npm
 
@@ -29,7 +38,7 @@ import {Easing} from 'react-native';
 />
 ```
 
-## 配置
+### 配置
 
 style：整个图片卡的样式，九宫格模式必须设置图片容器宽度
 
