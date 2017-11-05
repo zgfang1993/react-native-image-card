@@ -22,7 +22,7 @@ npm install --save react-native-image-card
 ```
 
 ```
-import ZoomImage from 'react-native-zoom-image';
+import CardPic from 'react-native-image-card';
 import {Easing} from 'react-native';
 <CardPic
   style={{height:200}} //容器样式
