@@ -8,11 +8,11 @@
 - [X] 单张图点击放大预览，支持背景色透明度配置，图片点开关闭时长配置，上下滑动或单击关闭预览
 - [ ] 预览图可双击放大，双指缩放
 - [ ] 预览图可左滑右滑
-- [ ] 长按保存到本地
+- [X] 长按保存到本地
 
 ### 效果图
 
-![cardpic](https://user-images.githubusercontent.com/14739234/32413941-5a4c464a-c1e1-11e7-9717-2495dc2496da.gif)
+![cardpic](https://user-images.githubusercontent.com/14739234/32446771-93cc79e6-c2cf-11e7-892c-f2775faebc91.gif)
 
 ### 使用
 

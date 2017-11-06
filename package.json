@@ -1,6 +1,6 @@
 {
   "name": "react-native-image-card",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Card Image component for React Native. Also supports multiple image layout and nine grid layout.",
   "main": "index.js",
   "scripts": {
@@ -15,6 +15,9 @@
     "url": "https://github.com/zgfang1993/react-native-image-card/issues"
   },
   "homepage": "https://github.com/zgfang1993/react-native-image-card.git#readme",
+  "dependencies":{
+    "react-native-easy-toast": "^1.0.9"
+  },
   "devDependencies": {
     "react": "16.0.0-beta.5",
     "react-native": "0.49.5"

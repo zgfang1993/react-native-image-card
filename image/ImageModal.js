@@ -12,6 +12,7 @@ import {
   CameraRoll
 } from 'react-native';
 import Animation from './Animation';
+import Toast from 'react-native-easy-toast'
 
 const winWidth = Dimensions.get('window').width;
 const winHeight = Dimensions.get('window').height;
@@ -275,6 +276,12 @@ export default class ImageModal extends Component {
     </TouchableWithoutFeedback>
     </View>
     {this.saveMenu(source.uri)}
+    <Toast
+      position='top'
+      positionValue={400}
+      opacity={0.6}
+      style={{paddingHorizontal: 15,paddingVertical:20}}
+      ref="toast"/>
   </Modal>
   );
   }
@@ -297,19 +304,19 @@ export default class ImageModal extends Component {
    */
   saveMenu(uri){
     return (
-        <View style={styles.menuContainer} ref={menu => {this.menu = menu}}>
-  <TouchableHighlight underlayColor="#F2F2F2"
-    onPress={this.saveToLocal.bind(this,uri)}
-    style={styles.operateContainer}>
-  <Text style={styles.operateText}>保存到手机相册</Text>
-    </TouchableHighlight>
-    <TouchableHighlight underlayColor="#F2F2F2"
-    onPress={this.leaveMenu.bind(this)}
-    style={styles.operateContainer}>
-  <Text style={styles.operateText}>取消</Text>
-    </TouchableHighlight>
-    </View>
-  )
+      <View style={styles.menuContainer} ref={menu => {this.menu = menu}}>
+        <TouchableHighlight underlayColor="#F2F2F2"
+          onPress={this.saveToLocal.bind(this,uri)}
+          style={styles.operateContainer}>
+          <Text style={styles.operateText}>保存到手机相册</Text>
+        </TouchableHighlight>
+        <TouchableHighlight underlayColor="#F2F2F2"
+          onPress={this.leaveMenu.bind(this)}
+          style={styles.operateContainer}>
+          <Text style={styles.operateText}>取消</Text>
+        </TouchableHighlight>
+      </View>
+    )
   }
 
   /**
@@ -325,9 +332,12 @@ export default class ImageModal extends Component {
 
     var promise = CameraRoll.saveToCameraRoll(uri);
     promise.then(function(result) {
-      alert('保存成功！地址如下：\n' + result);
+      //alert('保存成功！地址如下：\n' + result);
+      toast.show('保存成功');
     }).catch(function(error) {
-      alert('保存失败！\n' + error);
+      toast.show('保存失败');
+      //alert('保存失败！\n' + error);
+      console.log(error)
     });
 
     this.menu.setNativeProps({bottom: -menuHeight});
