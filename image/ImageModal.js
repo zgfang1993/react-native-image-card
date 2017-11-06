@@ -329,7 +329,7 @@ export default class ImageModal extends Component {
    * 图片保存到本地相册
    */
   saveToLocal(uri){
-
+    let toast = this.refs.toast
     var promise = CameraRoll.saveToCameraRoll(uri);
     promise.then(function(result) {
       //alert('保存成功！地址如下：\n' + result);
